@@ -7,24 +7,22 @@ export async function GET() {
 
   const config = {
     accountAssociation: {
-      header:
-        "eyJmaWQiOjEzNTk2LCJ0eXBlIjoiY3VzdG9keSIsImtleSI6IjB4ODE3MzE4RDZmRkY2NkExOGQ4M0ExMzc2QTc2RjZlMzBCNDNjODg4OSJ9",
-      payload:
-        "eyJkb21haW4iOiJmYXJjYXN0ZXItbWluaWFwcC10ZW1wbGF0ZS52ZXJjZWwuYXBwIn0",
-      signature:
-        "MHg5ZjkyZTdkNjRmZTNhNTE4YTEzOTBmZTdlYzAwOWQzODUzZWM2N2RmOTZiYjg1MzAwOGRlZDExNjVmOGE5OGVlNDQyYmI0MDU3OTI0ZmEzOGE3N2NlYWRiYThiMTRiN2IzMTY5N2ZjYWVlZGM3MTE1YWNiMTFmYjc2Y2EzYTc0YzFj",
+      header: "eyJmaWQiOjg2OTk5OSwidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweDc2ZDUwQjBFMTQ3OWE5QmEyYkQ5MzVGMUU5YTI3QzBjNjQ5QzhDMTIifQ",
+      payload: "eyJkb21haW4iOiJwb255b25nbWktYnJpZ2h0c3Vuc2V0YXBwLnZlcmNlbC5hcHAifQ",
+      signature: "MHgwOWI2MTlmMTEyODc3ZWE0YTU3MTg3MzhiYTUyZjUwZTE5NmFlOWQyZjI1NDA3MGNhMGJkMTIzY2Y0NmY5N2VkN2Q0Njg4NTdhMTRhYjc2YThlZGEyZjMyZTYwYmY3MmZiOWQ2NTZhYTRiM2RmNzEyODE4Yjc0Y2FmYTQ1OWVmMzFi",
     },
     frame: {
       version: "1",
-      name: PROJECT_TITLE,
+      name: "Goobie Game",
       iconUrl: `${appUrl}/icon.png`,
       homeUrl: appUrl,
-      imageUrl: `${appUrl}/frames/hello/opengraph-image`,
-      ogImageUrl: `${appUrl}/frames/hello/opengraph-image`,
+      imageUrl: `${appUrl}/og.png`,
       buttonTitle: "Open",
-      splashImageUrl: `${appUrl}/splash.png`,
-      splashBackgroundColor: "#f7f7f7",
       webhookUrl: `${appUrl}/api/webhook`,
+      splashImageUrl: `${appUrl}/splash.png`,
+      splashBackgroundColor: "#555555",
+      primaryCategory: "games",
+      tags: ["game", "interactive", "fun", "mini-app", "farcaster"],
     },
   };
 
